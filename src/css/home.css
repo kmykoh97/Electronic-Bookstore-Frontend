@@ -1,0 +1,35 @@
+.imgIntro{
+    float: left;
+    margin-left: 10vmin;
+    margin-top: 10vmin;
+    height: 60vmin;
+    width: 500px;
+}
+.newarr{
+    float: left;
+    margin-left: 25vmin;
+    font-size: 10vmin;
+    color: blueviolet;
+    font-weight: bold;
+}
+.off{
+    float: left;
+    margin-top: 10vmin;
+    margin-left: 28vmin;
+    font-size: 5vmin;
+    color: red;
+    font-weight: bold;
+}
+.toList{
+    float: left;
+    margin-left: 10vmin;
+    margin-top: 20vmin;
+    font-size: 3vmin;
+    text-align: center;
+    text-decoration: none;
+    
+}
+.back{
+    background-color: white;
+    height: 80vmin;
+}

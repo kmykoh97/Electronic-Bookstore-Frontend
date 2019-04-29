@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgb(255, 246, 246);
+}
+
+.links1{
+  color: white;
+  position: absolute;
+  right: 10vmin;
+  top:5vmin;
+  margin-right: 1vmin;
+  margin-bottom: 10vmin;
+  font-size: 3vmin;
+  text-align: center;
+  width:15vmin;
+  height: 4.5vmin;
+  background-color: lightgreen;
+  border-radius: 5px
+}
+.links2{
+  color: white;
+  position: absolute;
+  top:5vmin;
+  right: 26vmin;
+  margin-right: 1vmin;
+  margin-bottom: 10vmin;
+  font-size: 3vmin;
+  text-align: center;
+  width:15vmin;
+  height: 4.5vmin;
+  background-color: lightgrey;
+  border-radius: 5px
+}
+.links4{
+  color: white;
+  position: absolute;
+  top:10.5vmin;
+  right: 26vmin;
+  margin-right: 1vmin;
+  margin-bottom: 10vmin;
+  font-size: 3vmin;
+  text-align: center;
+  width:15vmin;
+  height: 4.5vmin;
+  background-color: lightgreen;
+  border-radius: 5px
+}
+.links5{
+
+  position: absolute;
+  top:10.5vmin;
+  right: 10vmin;
+  margin-right: 1vmin;
+  margin-bottom: 10vmin;
+  background-color: lightgrey;
+  font-size: 3vmin;
+  text-align: center;
+  width:15vmin;
+  height: 4.5vmin;
+  border-radius: 5px
+}
+.links6{
+  color: white;
+  position: absolute;
+  top:10.5vmin;
+  right: 42vmin;
+  margin-right: 1vmin;
+  margin-bottom: 10vmin;
+  font-size: 3vmin;
+  text-align: center;
+  width:15vmin;
+  height: 4.5vmin;
+}
+.SelectorAdmin{
+  border-radius: 0vmin;
+  border: 0px;
+  background-color: lightgrey;
+  color: black;
+  font-size: 3vmin;
+  text-align: center;
+  padding-left: 2vmin;
+  width:15vmin;
+  height: 4.5vmin;
+}
+.loginBut{
+  position: absolute;
+  top:5vmin;
+  right: 42vmin;
+  margin-right: 1vmin;
+  margin-bottom: 10vmin;
+  background-color: pink;
+  border-radius: 5px;
+  font-size: 3vmin;
+  text-align: center;
+  width:15vmin;
+  height: 4.5vmin;
+}
+.linkText{
+  color: white;
+  text-decoration: none;
+}
+h1{
+  text-align: center;
+}
+.title{
+  font-size: 10vmin;
+  height: 20vmin;
+  text-align: center;
+  font-family: Arial;
+}

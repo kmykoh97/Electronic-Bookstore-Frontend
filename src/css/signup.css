@@ -1,0 +1,29 @@
+.back{
+    background-color: #f8f0f8;
+    height: 80vmin;
+}
+
+.form{
+    text-align: center;
+}
+
+.property{
+    margin-left: 75vmin;
+    text-align: left;
+    width: 20vmin;
+}
+
+input{
+    width:60vmin;
+}
+
+.signupbut{
+    margin-top: 2.5vmin;
+    width: 25vmin;
+    height: 6vmin;
+    backgroundColor: lightgrey;
+    border: yellow;
+    align: center;
+    display: inline-block;
+    font-size: 2.5vmin;
+}

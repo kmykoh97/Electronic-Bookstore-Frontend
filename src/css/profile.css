@@ -1,0 +1,36 @@
+.Info{
+    font-size: 3vmin;
+    margin-left: 45vmin;
+    float: left;
+    line-height: 8vmin;
+}
+.index{
+    width: 30vmin;
+    height: 6vmin;
+}
+.logout{
+    float: left;
+    margin-left: 5vmin;
+    margin-top: 60vmin;
+    width: 25vmin;
+    height: 6vmin;
+    border: yellow;
+    color: black;
+    align: center;
+    display: inline-block;
+    font-size: 2.5vmin;
+}
+.changeBut{
+    float: left;
+    margin-left: 5vmin;
+    margin-top: 60vmin;
+    width: 25vmin;
+    height: 6vmin;
+    border: yellow;
+    align: center;
+    display: inline-block;
+    font-size: 2.5vmin;
+}
+.inputInfo{
+    width:60vmin;
+}

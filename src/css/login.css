@@ -1,0 +1,40 @@
+.inputs{
+    float: left;
+    height: 1vmin;
+    margin-top: 10vmin;
+    margin-left: 80vmin;
+    text-align: center;
+    font-size: 4vmin;
+}
+.logout{
+    margin-top: 2.5vmin;
+    width: 25vmin;
+    border-radius: 2vmin;
+    height: 4.5vmin;
+    backgroundColor: lightgrey;
+    border: yellow;
+    color: black;
+    align: center;
+    display: inline-block;
+    font-size: 2.5vmin;
+}
+.loginbut{
+    width: 20vmin;
+    margin-top: 2.5vmin;
+    font-size: 2.5vmin;
+    border-radius:5px;
+ }
+.signup{
+    margin-left: 5vmin;
+    width: 20vmin;
+    margin-top: 2.5vmin;
+    font-size: 2.5vmin;
+    border-radius:5px;
+}
+.back{
+    background-color: #d5f6ff;
+    height: 80vmin;
+}
+.usnNpsw{
+    width: 60vmin;
+}

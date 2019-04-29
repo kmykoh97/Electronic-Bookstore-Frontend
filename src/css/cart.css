@@ -1,0 +1,55 @@
+table{
+    margin-top: 2.5vmin;
+    align-content: center;
+    width: 120vmin;
+    float: left;
+    font-family: verdana,arial,sans-serif;
+    font-size: 2.5vmin;
+    color:#333333;
+    border-color: #666666;
+    border-collapse: collapse;
+    opacity: 1;
+    background-color: #d5f6ff;
+}
+.tableCart{
+    margin-left: 40vmin;
+}
+.inputTag{
+    text-align: center;
+    width: 29vmin;
+}
+tr {
+    border-width: 0.2vmin;
+    padding: 1vmin;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+}
+td {
+    text-align: left;
+    border-width: 0.2vmin;
+    padding: 1vmin;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #d5f6ff;
+}
+th {
+    text-align: left;
+    border-width: 0.2vmin;
+    padding: 1vmin;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #d5f6ff;
+    border-radius: 6px;
+}
+
+.submitOrder{
+    margin-left: 75vmin;
+    margin-top: 5vmin;
+    font-size: 3vmin;
+    text-align: center;
+    width:55vmin;
+    height: 5.5vmin;
+    padding: 0.2vmin;
+    display: inline-block;
+}

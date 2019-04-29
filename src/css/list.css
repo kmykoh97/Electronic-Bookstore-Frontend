@@ -1,0 +1,150 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+h1{
+    font-size: 6.5vmin;
+}
+table{
+    margin-top: 2.5vmin;
+    align-content: center;
+    width: 120vmin;
+    float: left;
+    margin-left: 20vmin;
+    font-family: verdana,arial,sans-serif;
+    font-size: 2.5vmin;
+    opacity: 0;
+    background-color: white;
+}
+tr {
+    border-width: 0.2vmin;
+    padding: 0;
+    background-color: white;
+    }
+td {
+    text-align: left;
+    padding: 0;
+    border-style: none;
+    background-color: white;
+ }
+th {
+    text-align: left;
+    padding: 0;
+    background-color: white;
+}
+.nameFilter{
+    margin-top: 2.5vmin;
+    border-radius: 2vmin;
+    background-color: #dedede;
+    font-size: 3vmin;
+    text-align: center;
+    float: left;
+    width:20vmin;
+    height: 6vmin;
+    margin-left: 50vmin;
+    margin-right: 1vmin;
+}
+.inputFilter{
+    border-radius: 2vmin;
+    padding-left: 1vmin;
+    float: left;
+    width: 30vmin;
+    margin-top: 2.5vmin;
+    margin-right: 1vmin;
+    height: 6vmin;
+    margin-bottom: 0.4vmin;
+    font-size: 3vmin;
+}
+.savebut{
+    margin-top: 2.5vmin;
+    margin-left: 0.5vmin;
+    width: 25vmin;
+    height: 6vmin;
+    align: center;
+    font-size: 2.5vmin;
+}
+.savebutAdmin{
+    margin-top: 2.5vmin;
+    margin-left: 70vmin;
+    width: 25vmin;
+    height: 6vmin;
+    align: center;
+    display: inline-block;
+    font-size: 2.5vmin;
+}
+.Selector{
+    border-radius: 1vmin;
+    color: white;
+    background-color: #5bc0de;
+    font-size: 3vmin;
+    text-align: center;
+    padding-left: 2vmin;
+    margin-right: 3vmin;
+    width:20vmin;
+    height: 6vmin;
+}
+.viewBut{
+    padding: 0.3vmin;
+    border-radius: 2vmin;
+    width: 15vmin;
+    height: 4.5vmin;
+    backgroundColor: lightgrey;
+    border: yellow;
+    color: black;
+    align: center;
+    display: inline-block;
+    font-size: 2.5vmin;
+}
+
+.manageBut{
+    margin-top: 2.5vmin;
+    margin-left: 0.5vmin;
+    width: 25vmin;
+    height: 6vmin;
+    align: center;
+    font-size: 2.5vmin;
+}
+.tot{
+    margin-left: 60vmin;
+    width: 40vmin;
+    height: 4.5vmin;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 3vmin;
+}
+.tot2{
+    margin-left: 10vmin;
+    width: 40vmin;
+    height: 4.5vmin;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 3vmin;
+}
+.back{
+    background-color: #d5f6ff;
+    height: 80vmin;
+}
