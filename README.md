@@ -7,6 +7,10 @@ A reactive mini Electronic Bookstore project frontend
 Front-end version 1 can be found [here](https://github.com/kmykoh97/e-Book)  
 Please note that front-end prototype has been rewritten to version 2 in this repository to enable reactive rendering using Ajax. Complicated design philosophy in version 1 has been depreciated to make use of easier back-end design philosophy.
 
+## Back-End
+
+Backend is written using Spring Framework with Hibernate database control. Source code can be found [here](https://github.com/kmykoh97/Electronic-Bookstore-Backend)
+
 ## Survey
 
 To further investigate the usefulness of this idea, we have randomly selected 15 students from Shanghai Jiao Tong University to give their opinions. Below are breakdown of some important points which may spark some interest:

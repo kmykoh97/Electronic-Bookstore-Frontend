@@ -61,7 +61,7 @@ function Confirm(props) {
                 ISBN: {Book.isbn}<br />
                 Author: {Book.Author}<br/>
                 Language: {Book.Language}<br/>
-                Price: {(Number(Book.Price)/100).toFixed(2)}<br/>
+                Price: {(Number(Book.Price))}<br/>
                 Description: {Book.Summary}<br/>
             </div>
             <div className={"cancel"}>
@@ -74,7 +74,7 @@ function Confirm(props) {
             <Button bsStyle={"primary"} bySize={"large"}
                 className={"submit"}
                 onClick={()=>purchase(Book.ID)}>
-                Purchase
+                Get This!
             </Button>
         </div>
     );

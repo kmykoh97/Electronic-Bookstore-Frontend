@@ -38,7 +38,6 @@ class Signup extends Component {
             return false;
         }
 
-        // send message to the backend.
         $.ajax({ url: "/signup/process",
             data:
                 {
@@ -57,7 +56,6 @@ class Signup extends Component {
                 {
                     valid = true;
                     setLogin(true);
-                    // alert("Sign up success");
                 }
                 else if (data.toString() === "Username used"){
                     valid = false;

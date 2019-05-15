@@ -40,11 +40,7 @@ class Login extends Component {
 
         if (isLogin) {
             this.context.router.history.goBack();
-            // alert("Success!");
         }
-        // else if (result==="Blocked user"){
-        //     alert("Your ID has been blocked");
-        // }
         else {
             alert("Invalid username or password.");
         }
