@@ -3,7 +3,7 @@ import {Button, Modal} from 'react-bootstrap';
 import PropTypes from "prop-types";
 
 import $ from "jquery";
-import '../../css/list.css';
+import '../css/list.css';
 
 
 

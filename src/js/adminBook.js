@@ -3,7 +3,7 @@ import {Button, Modal, ModalBody, ModalFooter, ModalHeader, ModalTitle} from 're
 import PropTypes from "prop-types";
 
 import $ from "jquery";
-import '../../css/list.css';
+import '../css/list.css';
 
 
 
