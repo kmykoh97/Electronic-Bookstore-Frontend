@@ -104,7 +104,14 @@ class Cart extends Component {
     }
 
     submitOrder() {
-        alert("Succesfully purchased. Please wait patiently for your book to arrive. Have a good day!")
+        $.ajax({ url: "/purchase/create_indent",
+            context: document.body,
+            async: false,
+            type: "post",
+            success: function(data){
+                alert("Succesfully purchased. Please wait patiently for your book to arrive. Have a good day!")
+            }});
+        this.context.router.history.push('/indents');
     }
 
     render() {

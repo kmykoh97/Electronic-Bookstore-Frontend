@@ -1,0 +1,19 @@
+.indentTableCart{
+    margin-left: 20vmin;
+}
+
+.bookFilter{
+    margin-left: 30vmin;
+}
+
+.indentFilters{
+    width: 20vmin;
+    padding-left: 1vmin;
+    margin-top: 2vmin;
+    height: 6vmin;
+    font-size: 3vmin;
+}
+.controlLabel{
+    font-size: 3vmin;
+    margin-top: 1.5vmin;
+}
