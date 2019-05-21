@@ -111,7 +111,7 @@ class Tbl extends Component {
                 }
             }
         }
-        else{
+        else {
             for (let i = 0; i < len - 1; i++) {
                 for (let j = 0; j < len - 1 - i; j++) {
                     if ((arr[j][index]) < (arr[j + 1][index])) {
@@ -285,7 +285,7 @@ class Tbl extends Component {
     }
 }
 
-class IndentsAdmin extends Component {
+class AdminHistory extends Component {
     static contextTypes = {
         router: PropTypes.object
     };
@@ -315,4 +315,4 @@ class IndentsAdmin extends Component {
 
 
 
-export default IndentsAdmin;
+export default AdminHistory;

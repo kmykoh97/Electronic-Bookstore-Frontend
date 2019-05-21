@@ -15,7 +15,7 @@ import Cart from './js/cart';
 import Indents from './js/indents';
 import BooklistAdmin from "./js/adminBook";
 import UserAdmin from "./js/adminUsers";
-import IndentsAdmin from "./js/adminIndents";
+import AdminHistory from "./js/adminHistory";
 import { unregister } from './js/registerServiceWorker';
 
 import $ from "jquery";
@@ -135,7 +135,7 @@ ReactDOM.render((
                 <Route exact path={"/indents"} component={Indents}/>
                 <Route exact path={"/admin_booklist"} component={BooklistAdmin}/>
                 <Route exact path={"/admin_users"} component={UserAdmin}/>
-                <Route exact path={"/admin_indents"} component={IndentsAdmin}/>
+                <Route exact path={"/admin_indents"} component={AdminHistory}/>
             </Switch>
             </div>
         </Router>
