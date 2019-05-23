@@ -9,7 +9,7 @@
     float: left;
     margin-left: 25vmin;
     font-size: 10vmin;
-    color: blueviolet;
+    color: blue;
     font-weight: bold;
 }
 .off{
@@ -17,7 +17,7 @@
     margin-top: 10vmin;
     margin-left: 28vmin;
     font-size: 5vmin;
-    color: red;
+    color: blue;
     font-weight: bold;
 }
 .toList{
@@ -30,6 +30,6 @@
     
 }
 .back{
-    background-color: white;
+    background-color: blue;
     height: 80vmin;
 }

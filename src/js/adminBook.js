@@ -96,7 +96,7 @@ class Tbl extends Component {
                 <td>{temp['Author']}</td>
                 <td>{temp['Language']}</td>
                 <td>{temp['Category']}</td>
-                <td>{(Number(temp['Price'])/100).toFixed(2)}</td>
+                <td>{(Number(temp['Price']))}</td>
                 <td>{temp['Inventory']}</td>
             </tr>);
             this.setState({tableArray:tbls});
@@ -229,7 +229,7 @@ class Tbl extends Component {
                     <td>{temp['Author']}</td>
                     <td>{temp['Language']}</td>
                     <td>{temp['Category']}</td>
-                    <td>{(Number(temp['Price'])/100).toFixed(2)}</td>
+                    <td>{(Number(temp['Price']))}</td>
                     <td>{temp['Inventory']}</td>
                 </tr>);
                 this.setState({tableArray: tbls});
@@ -247,7 +247,7 @@ class Tbl extends Component {
                 document.getElementById("inputAuthor").value = theBook["Author"];
                 document.getElementById("inputLanguage").value = theBook["Language"];
                 document.getElementById("inputCategory").value = theBook["Category"];
-                document.getElementById("inputPrice").value = (theBook["Price"]/100).toFixed(2);
+                document.getElementById("inputPrice").value = (theBook["Price"]);
                 document.getElementById("inputInventory").value = theBook["Inventory"];
                 document.getElementById("inputSummary").value = theBook["Summary"];
             }
@@ -330,12 +330,11 @@ class Tbl extends Component {
                 >
                     <Modal.Header closeButton>
                         <Modal.Title>
-                        Manage a book
+                        Book Management
                         </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                    <h4>Type in the book ID to fetch and update information.</h4>
-                    <h4>Adding a new book is also valid.</h4>
+                    <h4>Add or Modify Books by typing Book detail.</h4>
                     <form>
                         <br/>Book ID<br/><input id={"inputID"} onChange={()=>this.fetchState()}/>
                         <br/> new Name<br/><input id={"inputName"}/>

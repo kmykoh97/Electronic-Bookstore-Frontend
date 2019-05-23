@@ -69,7 +69,7 @@ class Tbl extends Component {
         let len = props.values.length;
         for (let i=0; i<len; i++) {
             let temp = props.values[i];
-            price = price + Number((Number(temp['Price'])/100).toFixed(2));
+            price = price + Number((Number(temp['Price'])));
             sales = Number(temp['Amount']) + sales;
             tbls.push(<tr>
                 <td>{temp['Username']}</td>
@@ -78,7 +78,7 @@ class Tbl extends Component {
                 <td>{temp['Author']}</td>
                 <td>{temp['Category']}</td>
                 <td>{temp['Amount']}</td>
-                <td>{(Number(temp['Price'])/100).toFixed(2)}</td>
+                <td>{(Number(temp['Price']))}</td>
                 <td>{temp['Time'].replace('T',' ')}</td>
             </tr>);
         }
@@ -223,7 +223,7 @@ class Tbl extends Component {
             console.log(this.check_filter(temp, author, username, startTime, endTime, category));
             if(from !==1 && (!this.check_filter(temp, author, username, startTime, endTime, category)))
                 continue;
-            price = price + Number((Number(temp['Price'])/100).toFixed(2));
+            price = price + Number((Number(temp['Price'])));
             sales = Number(temp['Amount']) + sales;
             tbls.push(
                 <tr>
@@ -233,7 +233,7 @@ class Tbl extends Component {
                     <td>{temp['Author']}</td>
                     <td>{temp['Category']}</td>
                     <td>{temp['Amount']}</td>
-                    <td>{(Number(temp['Price'])/100).toFixed(2)}</td>
+                    <td>{(Number(temp['Price']))}</td>
                     <td>{temp['Time'].replace('T',' ')}</td>
                 </tr>);
             this.setState({tableArray: tbls});
@@ -254,19 +254,18 @@ class Tbl extends Component {
                 />
 
                 <div className={"tot"}> Tot Sales:{this.state.totSales} </div>
-                <div className={"tot2"}>Tot Price:{Number(this.state.totPrice).toFixed(2)}</div>
+                <div className={"tot2"}>Tot Price:{Number(this.state.totPrice)}</div>
                 <Modal
                     show={this.state.showModal}
                     onHide={this.closeModal}
                 >
                     <Modal.Header closeButton>
                         <Modal.Title>
-                            Indents stats
+                            Statistics Inspection
                         </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                    <h4>Type in the constraints.</h4>
-                    <h4>The table may remain unchanged if none matches the constraints.</h4>
+                    <h4>Fill as required. System will automatically update information</h4>
                     <form>
                         <br/>Username<br/><input id={"inputUsername"}/>
                         <br/>Author<br/> <input id={"inputAuthor"}/>
@@ -276,7 +275,7 @@ class Tbl extends Component {
                     </form>
                     </Modal.Body>
                     <Modal.Footer>
-                    <Button onClick={()=>this.Filter(0)}>Submit</Button>
+                    <Button onClick={()=>this.Filter(0)}>Check</Button>
                     <Button onClick={this.closeModal}>Close</Button>
                     </Modal.Footer>
                 </Modal>

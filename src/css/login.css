@@ -11,8 +11,8 @@
     width: 25vmin;
     border-radius: 2vmin;
     height: 4.5vmin;
-    backgroundColor: lightgrey;
-    border: yellow;
+    background-color: lightgrey;
+    border: red;
     color: black;
     align: center;
     display: inline-block;
@@ -32,7 +32,7 @@
     border-radius:5px;
 }
 .back{
-    background-color: #d5f6ff;
+    background-color: yellow;
     height: 80vmin;
 }
 .usnNpsw{

@@ -99,7 +99,6 @@ class Title extends Component {
                     </div>
                     <div className={"links6"}>
                         <select onChange={()=>this.jump()} className={"SelectorAdmin"} id={"adminSelector"}>
-                            <option>Stats</option>
                             <option>-Sold</option>
                             <option>-Users</option>
                             <option>-Earning</option>

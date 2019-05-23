@@ -37,7 +37,7 @@ function Msg (props) {
             <th><Button style={style} onClick={props.PhoneClick}>Phone</Button></th>
             <th><Button style={style} onClick={props.EmailClick}>Email</Button></th>
             <th><Button style={style} onClick={props.AddressClick}>Address</Button></th>
-            <th><Button style={style} onClick={props.ValidClick}>isValid</Button></th>
+            <th><Button style={style} onClick={props.ValidClick}>Validity</Button></th>
             <tbody>
             {props.value}
             </tbody>
@@ -55,7 +55,6 @@ function Selection(props) {
             <option>Address</option>
         </select>
     )
-
 }
 
 class Tbl extends Component {
@@ -86,7 +85,7 @@ class Tbl extends Component {
         };
         this.Filter = this.Filter.bind(this);
         let len = props.values.length;
-        for (let i=0; i<len; i++){
+        for (let i=0; i<len; i++) {
             let temp = props.values[i];
             let tbls = this.state.tableArray;
             tbls.push(<tr>
@@ -262,12 +261,11 @@ class Tbl extends Component {
                 >
                     <Modal.Header closeButton>
                         <Modal.Title>
-                        Manage a user
+                        User Management
                         </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <h4>Type in the Username to update information.</h4>
-                        <h4>Adding a new user is NOT valid.</h4>
+                        <h4>Admin can update user information here</h4>
                         <form>
                             <br/>Username<br/><input id={"inputUsername"} onChange={()=>this.fetchState()}/>
                             <br/>isValid<br/> <input id={"inputIsValid"}/>
@@ -299,7 +297,7 @@ class UserAdmin extends Component {
                 else
                     data = value;
             }});
-        if (data==="Not admin") {
+        if (data === "Not admin") {
             alert("Only admins are able to perform this action");
             this.context.router.history.goBack();
         }

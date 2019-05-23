@@ -5,11 +5,11 @@ table{
     float: left;
     font-family: verdana,arial,sans-serif;
     font-size: 2.5vmin;
-    color:#333333;
-    border-color: #666666;
+    /* color:yellow; */
+    border-color: red;
     border-collapse: collapse;
     opacity: 1;
-    background-color: #d5f6ff;
+    background-color: yellow;
 }
 .tableCart{
     margin-left: 40vmin;
@@ -22,24 +22,24 @@ tr {
     border-width: 0.2vmin;
     padding: 1vmin;
     border-style: solid;
-    border-color: #666666;
-    background-color: #dedede;
+    border-color: red;
+    background-color: yellow;
 }
 td {
     text-align: left;
     border-width: 0.2vmin;
     padding: 1vmin;
     border-style: solid;
-    border-color: #666666;
-    background-color: #d5f6ff;
+    border-color: red;
+    background-color: yellow;
 }
 th {
     text-align: left;
     border-width: 0.2vmin;
     padding: 1vmin;
     border-style: solid;
-    border-color: #666666;
-    background-color: #d5f6ff;
+    border-color: red;
+    background-color: yellow;
     border-radius: 6px;
 }
 

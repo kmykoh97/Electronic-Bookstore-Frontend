@@ -4,7 +4,7 @@
     float: top;
     font-family: Consolas;
     font-weight: bold;
-    color: darkblue;
+    color: yellow;
     margin-left: 45vmin;
 }
 
@@ -15,7 +15,7 @@
     line-height: 8vmin;
 }
 .back{
-    background-color: #d5f6ff;
+    background-color: yellow;
     height: 80vmin;
 }
 .submit{

@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: rgb(255, 246, 246);
+  background-color: #fce7e7;
 }
 
 .links1{
@@ -16,7 +16,7 @@ body {
   text-align: center;
   width:15vmin;
   height: 4.5vmin;
-  background-color: lightgreen;
+  background-color: pink;
   border-radius: 5px
 }
 .links2{
@@ -30,7 +30,7 @@ body {
   text-align: center;
   width:15vmin;
   height: 4.5vmin;
-  background-color: lightgrey;
+  background-color: pink;
   border-radius: 5px
 }
 .links4{
@@ -44,7 +44,7 @@ body {
   text-align: center;
   width:15vmin;
   height: 4.5vmin;
-  background-color: lightgreen;
+  background-color: pink;
   border-radius: 5px
 }
 .links5{
@@ -54,7 +54,7 @@ body {
   right: 10vmin;
   margin-right: 1vmin;
   margin-bottom: 10vmin;
-  background-color: lightgrey;
+  background-color: pink;
   font-size: 3vmin;
   text-align: center;
   width:15vmin;
@@ -62,6 +62,7 @@ body {
   border-radius: 5px
 }
 .links6{
+  background-color: pink;
   color: white;
   position: absolute;
   top:10.5vmin;
@@ -72,17 +73,20 @@ body {
   text-align: center;
   width:15vmin;
   height: 4.5vmin;
+  border-radius: 5px;
 }
 .SelectorAdmin{
+  Color: white;
   border-radius: 0vmin;
   border: 0px;
-  background-color: lightgrey;
+  background-color: pink;
   color: black;
   font-size: 3vmin;
   text-align: center;
   padding-left: 2vmin;
   width:15vmin;
   height: 4.5vmin;
+  border-radius: 5px;
 }
 .loginBut{
   position: absolute;
@@ -98,7 +102,6 @@ body {
   height: 4.5vmin;
 }
 .linkText{
-  color: white;
   text-decoration: none;
 }
 h1{
