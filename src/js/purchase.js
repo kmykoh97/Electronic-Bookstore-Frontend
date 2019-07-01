@@ -23,7 +23,7 @@ function Confirm(props) {
         Summary:""
     };
 
-    for (let i = 0; i < data.length; i++){
+    for (let i = 0; i < data.length; i++) {
         if (Number(data[i].ID) === Number(Book.ID)) {
             Book.Name = data[i].Name;
             Book.isbn = data[i].isbn;
@@ -52,6 +52,26 @@ function Confirm(props) {
         this.context.router.history.push("/cart");
     };
 
+    let comment = function (bookID) {
+        let ret = prompt("Add your comment");
+        if (ret !== null) {
+            $.ajax({ url: "purchase/add_comment",
+                data: {bookID:bookID, comment:ret},
+                context: document.body,
+                async: true,
+                type: "post",
+                success: function(data) {
+                    if (data === "Success") {
+                        // alert("Successfully added comment");
+                    } else {
+                        // alert("Error adding comment");
+                    }
+                }});
+        }
+
+        window.location.reload();
+    };
+
     return (
         <div>
             <div className={"confirm"}>Information</div>
@@ -76,8 +96,58 @@ function Confirm(props) {
                 onClick={()=>purchase(Book.ID)}>
                 Get This!
             </Button>
+            <Button bsStyle={"info"} bySize={"large"}
+                className={"comment"}
+                onClick={()=>comment(Book.ID)}>
+                Comment
+            </Button>
         </div>
     );
+}
+
+class Comments extends Component{
+    constructor(props) {
+        super(props);
+        let data = [];
+        $.ajax({ url: "purchase/get_comment",
+            data: {bookID: this.props.ID},
+            context: document.body,
+            async: false,
+            type: "post",
+            success: function(value) {
+                if (value === "none") {
+                    // data = ["no comment added yet!"];
+                } else {
+                    data = $.parseJSON(value);
+                    data = data["comment"];
+                }
+            }});
+
+        let buf = [];
+        for (let i = 0; i < data.length; i++) {
+            buf.push(<div>Comment {i+1}: {data[i]}</div>);
+        }
+
+        if (data === undefined || data.length == 0) {
+            // array empty or does not exist
+            buf = [];
+            buf.push(<div>No available comment!</div>);
+        }
+
+        this.state = {
+            comments: data,
+            show: buf
+        };
+    }
+
+    render() {
+        return (
+            <div className="Comments">
+                <h2>Comments:</h2>
+                {this.state.show}
+            </div>
+        );
+    }
 }
 
 class Purchase extends Component {
@@ -102,6 +172,7 @@ class Purchase extends Component {
         return (
             <div className="back">
                 <Confirm ID={this.props.location.state.id}/>
+                <Comments ID={this.props.location.state.id}/>
             </div>
         )
     }

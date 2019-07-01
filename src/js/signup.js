@@ -52,7 +52,7 @@ class Signup extends Component {
             async: false,
             type: "post",
             success: function(data) {
-                if (data.toString()==="Succeed")
+                if (data.toString() === "Succeed")
                 {
                     valid = true;
                     setLogin(true);
