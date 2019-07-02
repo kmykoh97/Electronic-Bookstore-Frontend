@@ -34,7 +34,7 @@ class ChangeAmount extends Component {
             }
         }
 
-        if (new_val % 1===0) {
+        if (new_val % 1 === 0) {
             this.setState({num: new_val});
             console.log()
             // send post
@@ -44,9 +44,9 @@ class ChangeAmount extends Component {
                 async: true,
                 type: "post",
                 success: function(data) {
-                    if (data.toString()!=="Succeed")
+                    if (data.toString() !== "Succeed")
                     {
-                        if (data.toString()==="No enough books")
+                        if (data.toString() === "No enough books")
                             alert("No enough books!");
                         else
                             alert("Error changing the amount.");
@@ -89,7 +89,7 @@ class Cart extends Component {
             }});
 
         let len = datajson.length;
-        for (let i=0; i<len; i++) {
+        for (let i = 0; i < len; i++) {
             let temp = datajson[i];
             let tbls = this.state.tableArray;
             tbls.push(<tr>

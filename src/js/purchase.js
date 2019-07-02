@@ -53,7 +53,7 @@ function Confirm(props) {
     };
 
     let comment = function (bookID) {
-        let ret = prompt("Add your comment");
+        let ret = prompt("Your review for this book: ");
         if (ret !== null) {
             $.ajax({ url: "purchase/add_comment",
                 data: {bookID:bookID, comment:ret},
@@ -62,9 +62,9 @@ function Confirm(props) {
                 type: "post",
                 success: function(data) {
                     if (data === "Success") {
-                        // alert("Successfully added comment");
+                        // do something if success
                     } else {
-                        // alert("Error adding comment");
+                        // do something if fail
                     }
                 }});
         }
